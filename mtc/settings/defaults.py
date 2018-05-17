@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.staticfiles',
 
+    'raven.contrib.django.raven_compat',
+
     'mtc.shorten',
 
     'mtc.rest',  # TODO: Make this an external library
