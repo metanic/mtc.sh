@@ -27,8 +27,6 @@ def cache_url(url):
 ALLOWED_HOSTS = ['mtc.sh']
 DATE_FORMAT = 'Y-m-d'
 DEBUG = False
-DEFAULT_FROM_EMAIL = 'services@mtc.sh'
-EMAIL_BACKEND = 'anymail.backends.mailgun.EmailBackend'
 INTERNAL_IPS = []
 MAILGUN_API_KEY = env_value('mailgun_api_key')
 ROOT_URLCONF = 'mtc.core.urls'
