@@ -2,6 +2,8 @@ import dj_database_url
 
 from mtc.settings.defaults import *  # noqa
 
+SECRET_KEY = env_value('SECRET_KEY')
+
 ALLOWED_HOSTS = [
     'mtc.sh',
 ]
