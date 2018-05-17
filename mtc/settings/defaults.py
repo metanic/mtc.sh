@@ -4,7 +4,7 @@ import urllib
 
 def env_value(name, default=None):
     name = name.upper()
-    return os.environ.get('METANIC_' + name, os.environ.get(name, default))
+    return os.environ.get('MTCSH_' + name, os.environ.get(name, default))
 
 
 def project_path(*paths):
