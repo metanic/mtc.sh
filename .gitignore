@@ -1,3 +1,7 @@
+# Ignore database files
+*.sqlite3
+*.rdb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -8,24 +12,26 @@ __pycache__/
 
 # Distribution / packaging
 *.egg
-*.egg-info/
+*.egg-info
 .Python
-.eggs/
+.eggs
 .installed.cfg
 MANIFEST
-bin/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-lib/
+bin
+build
+develop-eggs
+dist
+downloads
+eggs
+lib
 lib64
-parts/
+parts
+pip-*.json
 pyvenv.cfg
-sdist/
-var/
-wheels/
+sdist
+share
+var
+wheels
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -104,3 +110,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Non-git hidden files
+.*
+!.git*
