@@ -6,6 +6,7 @@ SECRET_KEY = env_value('SECRET_KEY')
 
 ALLOWED_HOSTS = [
     'mtc.sh',
+    'mtcsh.herokuapp.com',
 ]
 
 CACHES = {
