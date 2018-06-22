@@ -9,7 +9,7 @@ from django.conf import settings
 
 
 def decode(identifier: str) -> int:
-    pad_size = len(raw_identifier) % 3
+    pad_size = len(identifier) % 3
     return base64.b64decode(identifier + '=' * pad_size)
 
 
