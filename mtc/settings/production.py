@@ -2,8 +2,6 @@ import dj_database_url
 
 from mtc.settings.defaults import *  # noqa
 
-SECRET_KEY = env_value('SECRET_KEY')
-
 ALLOWED_HOSTS = [
     'mtc.sh',
     'mtcsh.herokuapp.com',
@@ -20,3 +18,10 @@ DATABASES = {
 RAVEN_CONFIG = {
     'dsn': env_value('sentry_dsn'),
 }
+
+# Checks to ensure things aren't ridiculous
+if len(SECRET_KEY) < 32:
+    raise ValueError(
+        "Please generate a longer secret key. Extra characters won't hurt. They'll "
+        "only help. A 32 character minimum is required, but longer strings are better."
+    )

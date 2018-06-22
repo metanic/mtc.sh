@@ -10,15 +10,10 @@ ALLOWED_HOSTS = [
 ]
 
 DATABASES = {
-    'default':
-        {
-            'ENGINE':
-                'django.db.backends.sqlite3',
-            'NAME':
-                project_path(
-                    env_value('DATABASE_FILENAME', 'metanic.sqlite3')
-                ),
-        },
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': project_path(env_value('DATABASE_FILENAME', 'metanic.sqlite3')),
+    },
 }
 
 INSTALLED_APPS += [

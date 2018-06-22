@@ -32,6 +32,12 @@ MAILGUN_API_KEY = env_value('mailgun_api_key')
 ROOT_URLCONF = 'mtc.core.urls'
 USE_L10N = True
 
+ACCESS_CONTROL_ALLOW_HEADERS = [
+  'Content-Type',
+  'Accept',
+  'Authentication',
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
